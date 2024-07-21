@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Factor - Login</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./request.js"></script>
+</head>
+<body>
+    <div class="apresentacao">
+        <h2 class="titulo">Factor<br>Sistema Financeiro</h2>
+        <img class="logo" src="../assets/logo.png"><br>
+        <label class="slogan">Contruindo Lares, Contruindo Sonhos!</label>
+    </div>
+
+    <div class="mainbox">
+        <h2 class="login">LOGIN</h2>
+
+        <div class="formulario">
+            <form>
+
+                <label for="user_email">E-MAIL:</label><br>
+                <input placeholder="exemplo@dominio.com" id="user_email" type="text"><br><br>
+
+                <label for="user_senha">SENHA:</label><br>
+                <input placeholder="********" id="user_senha" type="password" maxlength="8" autocomplete="on"><br>
+            
+            </form>
+        </div>
+        
+        <div class="navegacao">
+            <button onclick="Request()">ENTRAR</button>
+            <button>CADASTRAR-SE</button>
+
+            <div class="recuperar">
+                <br><a href="">Esqueceu a senha? Clique aqui.</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

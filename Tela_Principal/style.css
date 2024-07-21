@@ -1,0 +1,93 @@
+.menu{
+    position: inherit;
+    width: 25%;
+    height: 100vh;
+    float: left;
+
+    margin-top: -8px;
+    margin-left: -8px;
+
+    box-shadow: 5px 0px 5px 5px rgba(0, 0, 0, 0.5);
+    background-color: #04394e;
+
+    & .titulo{
+        position: inherit;
+        display: flex;
+
+        & img{
+            width: 100px;
+            margin-left: 30px;
+            filter: invert(1);
+            float: left;
+        }
+
+        & p{
+            
+            .empresa{
+                font-family: 'Roboto';
+                font-size: 48px;
+                font-weight: bold;
+                color: white;
+                margin-left: 30px;
+            }
+
+            .welcome{
+                font-family: 'Calibri';
+                font-size: 20px;
+                color: white;
+                margin-left: 30px;
+            }
+        }
+
+    }
+
+    & .navegador{
+
+        & li{
+            list-style: none;
+            border-bottom: 2px solid white;
+        }
+
+        & a{
+            display: block;
+            font-family: 'Calibri';
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+
+            transition: 0.3s;
+            opacity: 0.7;
+        }
+
+        & a:hover{
+            opacity: 1;
+        }
+
+        & img{
+            width: 30px;
+            height: 30px;
+            padding: 10px;
+            filter: invert(1);
+            vertical-align: middle;
+        }
+
+        & .footer{
+            position:relative;
+            bottom: -26vh;
+            display: flex;
+            justify-content: space-evenly;
+
+            & img{
+                width: 20px;
+                margin-bottom: -15px;
+            }
+
+            & label{
+                font-size: 14px;
+                font-weight: normal;
+            }
+        }
+    }
+
+}

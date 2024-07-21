@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Factor - Cadastro</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
+    <script src="./request.js"></script>
+</head>
+<body>
+    <div class="form">
+
+        <form>
+
+            <h2>CADASTRAMENTO DE USUÁRIO</h2>
+
+            <label for="user_nome">NOME:</label><br>
+            <input class="input" placeholder="João Silva" id="user_nome" maxlength="50">
+
+            <label for="user_cpf">CPF:</label><br>
+            <input class="input" oninput="MaskCPF()" placeholder="000.000.000-00" id="user_cpf" maxlength="14">
+
+            <label for="user_email">EMAIL:</label><br>
+            <input class="input" placeholder="exemplo@dominio.com" id="user_email" maxlength="75">
+
+            <label for="user_contato">CONTATO:</label><br>
+            <input class="input" oninput="MaskContato()" placeholder="(99)99999-9999" id="user_contato" maxlength="14">
+
+            <label for="user_senha">SENHA:</label><br>
+            <input class="input" type="password" placeholder="********" id="user_senha" maxlength="8" autocomplete="on">
+
+        </form>
+
+        <button onclick="Request()">REGISTRAR-SE</button><br>
+        <a href="">Já tem cadastro? Então faça login</a>
+
+    </div>
+</body>
+</html>

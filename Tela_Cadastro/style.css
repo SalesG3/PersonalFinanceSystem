@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #ebe7e0;
+    /* Centraliza a div 'form' */
+}
+
+.form {
+    position: inherit;
+    width: 30%;
+    height: 70vh;
+
+    margin-top: 5%;
+
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
+    background-color: #bdb8ad;
+    /* Configura a div principal */
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
+    font-family: 'Roboto';
+}
+
+label {
+    font-family: 'Calibri';
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-left: 15%;
+}
+
+input {
+    font-family: 'Calibri';
+    font-size: 16px;
+
+    margin-left: 15%;
+    width: 70%;
+    height: 28px;
+    padding-left: 5px;
+    margin-bottom: 15px;
+
+    outline: none;
+    border: 0px solid;
+    border-radius: 5px;
+    background-color:#ebe7e0;
+    transition: 0.5s;
+}
+
+input:focus{
+    background-color: white;
+}
+
+button {
+    width: 70%;
+    height: 40px;
+    margin-left: 15%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+    border: 0px solid;
+    border-radius: 5px;
+
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: 0.3s;
+    color: white;
+    background-color: #44749d;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #04394e;
+}
+
+a {
+    margin-left: 15%;
+    font-family: 'Calibri';
+    color: black;
+    transition: 0.3s;
+}
+
+a:hover{
+    color:#44749d;
+}
+
+/* Animações para JavaScript */
+
+.obrigatorio {
+    border: 1px solid rgb(255, 75, 75);
+}

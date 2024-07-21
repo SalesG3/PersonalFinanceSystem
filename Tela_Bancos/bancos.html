@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Factor - Bancos</title>
+
+    <link rel="stylesheet" href="./menu-style.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <script src="./request.js"></script>
+</head>
+<body>
+    
+    <div class="menu">
+
+        <div class="titulo">
+            <img src="../assets/logo.png">
+            <p><label class="empresa">FACTOR</label><br><label class="welcome"></label></p>
+        </div>
+
+        <div class="navegador">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="../assets/menu.png" alt="menu.png">
+                        MENU
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/home.svg" alt="home.svg">
+                        INÍCIO
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/movimentacoes.svg" alt="movimentacoes.svg">
+                        MOVIMENTAÇÕES
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/relatorios.svg" alt="relatorios.svg">
+                        RELATÓRIOS
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/tag.svg" alt="tag.svg">
+                        CATEGORIAS
+                    </a>
+                </li>
+                <li>
+                    <a href="../Tela_Bancos/bancos.html">
+                        <img src="../assets/banco.svg" alt="banco.svg">
+                        BANCOS
+                    </a>
+                </li>
+            </ul>
+
+            <div class="footer">
+
+                <div class="conta">
+                    <a href="">
+                        <img src="../assets/user.svg" alt="user_svg">
+                        <br><label>Conta</label>
+                    </a>
+                </div>
+
+                <div class="suport">
+                    <a href="https://wa.me/5577933015708" target="_blank">
+                        <img src="../assets/suport.svg" alt="suport.svg">
+                        <br><label>Suporte</label>
+                    </a>
+                </div>
+
+                <div class="sair">
+                    <a href="" id="log-out">
+                        <img src="../assets/sair.svg" alt="sair.svg">
+                        <br><label>Log-out</label>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="corpo">
+        <h2 class="titulo">GERENCIAMENTO DE BANCOS:</h2>
+        
+        <nav class="ferramentas">
+            <button onclick="Cadastrar()">
+                <img src="../assets/cadastrar.svg" alt="cadastrar.svg">
+                CADASTRAR
+            </button>
+            <button onclick="Teste()">
+                <img src="../assets/editar.svg" alt="editar.svg">
+                ALTERAR
+            </button>
+            <button>
+                <img src="../assets/consultar.svg" alt="consultar.svg">
+                CONSULTAR
+            </button>
+            <button>
+                <img src="../assets/apagar.svg" alt="apagar.svg">
+                APAGAR
+            </button>
+        </nav>
+
+        <div class="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="conta">CONTA:</th>
+                        <th class="descricao">DESCRIÇÃO:</th>
+                        <th class="implantacao">IMPLANTAÇÃO:</th>
+                        <th class="limite">LIMITE:</th>
+                        <th class="saldo">SALDO:</th>
+                    </tr>
+                </thead>
+                <tbody id="dados-tabela">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="detalhes">
+
+            <h3 class="detalhes-titulo"></h3>
+
+            <img src="../assets/wallpaper-detail.jpg" alt="ilustracao.jpg">
+
+            <!-- Linha 01 -->
+
+            <label for="banco_conta">CONTA:</label>
+            <label for="banco_implantacao">IMPLANTAÇÃO:</label>
+
+            <br>
+
+            <input placeholder="Exemplo: Caixa" maxlength="50" type="text" id="banco_conta">
+            <input placeholder="0,00" oninput="MaskImplant()" maxlength="10" type="text" id="banco_implantacao">
+
+            <br> <!-- Linha 02 --> <br>
+            
+            <label for="banco_descricao">DESCRIÇÃO:</label>
+            
+            <br>
+
+            <input placeholder="Opcional" maxlength="80" type="text" id="banco_descricao">
+
+            <br> <!-- Linha 03 --> <br>
+            
+            <label for="banco_limite">LIMITE:</label>
+            <label for="banco_saldo">SALDO:</label>
+
+            <br>
+            
+            <input oninput="MaskLimit()" placeholder="0,00" maxlength="10" type="text" id="banco_limite">
+            <input placeholder="R$ 0,00" readonly="readonly" type="text" id="banco_saldo">
+
+            <button onclick="Validate()" class="btn_salvar">SALVAR</button>
+            <button class="btn_cancelar">CANCELAR</button>
+        </div>
+
+    </div>
+</body>
+</html>
